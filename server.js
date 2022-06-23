@@ -8,6 +8,8 @@ async function init() {
 
   const init_answers = await company.ask(questions.init);
   console.log("init_answers", init_answers);
+
+  company.process(init_answers);
 }
 
 init();

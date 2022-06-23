@@ -4,7 +4,7 @@ let questions = {
   init: [
     {
       type: "list",
-      name: "init_option",
+      name: "todo",
       message: "Select One",
       choices: [
         { value: "view_all_departments", name: "View all departments" },
