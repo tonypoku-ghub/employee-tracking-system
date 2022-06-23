@@ -1,0 +1,22 @@
+const ListPrompt = require("inquirer/lib/prompts/list");
+
+let questions = {
+  init: [
+    {
+      type: "list",
+      name: "init_option",
+      message: "Select One",
+      choices: [
+        { value: "view_all_departments", name: "View all departments" },
+        { value: "view_all_roles", name: "View all roles" },
+        { value: "view_all_employees", name: "View all employees" },
+        { value: "add_department", name: "Add a department" },
+        { value: "add_role", name: "Add a role" },
+        { value: "add_employee", name: "Add an employee" },
+        { value: "update employee", name: "Update an employee" },
+      ],
+    },
+  ],
+};
+
+module.exports = questions;
