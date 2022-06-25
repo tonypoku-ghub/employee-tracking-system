@@ -1,4 +1,6 @@
 const ListPrompt = require("inquirer/lib/prompts/list");
+const { listenerCount } = require("mysql2/typings/mysql/lib/Connection");
+const dao = new require("./DAO")();
 
 let questions = {
   init: [
@@ -13,8 +15,30 @@ let questions = {
         { value: "add_department", name: "Add a department" },
         { value: "add_role", name: "Add a role" },
         { value: "add_employee", name: "Add an employee" },
-        { value: "update employee", name: "Update an employee" },
+        { value: "update_employee", name: "Update an employee" },
       ],
+    },
+  ],
+  add_department: [
+    {
+      name: "department_name",
+      message: "Enter department name",
+    },
+  ],
+  add_role: [
+    {
+      name: "title",
+      message: "Enter role name",
+    },
+    {
+      name: "salary",
+      message: "Enter salary",
+    },
+    {
+      type: "list",
+      name: "title",
+      message: "Enter department name",
+      choices: [dao.viewAllDepartments()],
     },
   ],
 };
