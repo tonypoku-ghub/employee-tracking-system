@@ -1,6 +1,17 @@
-const ListPrompt = require("inquirer/lib/prompts/list");
-const { listenerCount } = require("mysql2/typings/mysql/lib/Connection");
-const dao = new require("./DAO")();
+const DAO = require("./DAO");
+
+let dao = new DAO();
+
+// department_list = () => {
+//   let list = dao.viewAllDepartments_inquirer();
+
+//   console.log("\nDept-list", list);
+//   // let newList = list.map((dbRec) => {
+//   //   return { name: dbRec.name, value: dbRec.id };
+//   // });
+
+//   return list;
+// };
 
 let questions = {
   init: [
@@ -33,12 +44,6 @@ let questions = {
     {
       name: "salary",
       message: "Enter salary",
-    },
-    {
-      type: "list",
-      name: "title",
-      message: "Enter department name",
-      choices: [dao.viewAllDepartments()],
     },
   ],
 };
