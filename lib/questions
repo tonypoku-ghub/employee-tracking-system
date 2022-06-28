@@ -2,17 +2,6 @@ const DAO = require("./DAO");
 
 let dao = new DAO();
 
-// department_list = () => {
-//   let list = dao.viewAllDepartments_inquirer();
-
-//   console.log("\nDept-list", list);
-//   // let newList = list.map((dbRec) => {
-//   //   return { name: dbRec.name, value: dbRec.id };
-//   // });
-
-//   return list;
-// };
-
 let questions = {
   init: [
     {
@@ -56,6 +45,7 @@ let questions = {
       message: "Enter last name",
     },
   ],
+  update_employee: [],
 };
 
 module.exports = questions;
