@@ -6,10 +6,12 @@ const Company = require("./lib/Company");
 async function init() {
   let company = new Company();
 
-  const init_answers = await company.ask(questions.init);
-  console.log("init_answers", init_answers);
+  do {
+    const init_answers = await company.ask(questions.init);
+    //console.log("init_answers", init_answers);
 
-  company.process(init_answers);
+    await company.process(init_answers);
+  } while (true);
 }
 
 init();
