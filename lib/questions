@@ -11,11 +11,14 @@ let questions = {
       choices: [
         { value: "view_all_employees", name: "View All Employees" },
         { value: "add_employee", name: "Add Employee" },
-        { value: "update_employee", name: "Update Employee Role" },
+        { value: "update_employee_role", name: "Update Employee Role" },
+        { value: "update_employee_manager", name: "Update Employee Manager" },
         { value: "view_all_roles", name: "View All Roles" },
         { value: "add_role", name: "Add Role" },
         { value: "view_all_departments", name: "View All Departments" },
         { value: "add_department", name: "Add Department" },
+        { value: "view_dept_budget", name: "View Department Utilized Budget" },
+        { value: "exit", name: "Quit Application" },
       ],
     },
   ],
@@ -46,6 +49,7 @@ let questions = {
     },
   ],
   update_employee: [],
+  view_dept_budget: [],
 };
 
 module.exports = questions;
