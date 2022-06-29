@@ -18,6 +18,14 @@ let questions = {
         { value: "view_all_departments", name: "View All Departments" },
         { value: "add_department", name: "Add Department" },
         { value: "view_dept_budget", name: "View Department Utilized Budget" },
+        {
+          value: "view_employees_by_manager",
+          name: "View Employees By Manager",
+        },
+        {
+          value: "view_employees_by_department",
+          name: "View Employees By Department",
+        },
         { value: "exit", name: "Quit Application" },
       ],
     },
@@ -48,8 +56,11 @@ let questions = {
       message: "Enter last name",
     },
   ],
-  update_employee: [],
+  update_employee_role: [],
+  update_employee_manager: [],
   view_dept_budget: [],
+  view_employees_by_manager: [],
+  view_employees_by_department: [],
 };
 
 module.exports = questions;

@@ -26,7 +26,7 @@ Below are some videos to help with usage.
 
 ### Sample use of application
 
-https://watch.screencastify.com/v/gVfTZW8hpInqePIwKYLu
+https://watch.screencastify.com/v/3WFPwEPsXX24Y1W8tadk
 
 ## License
 
